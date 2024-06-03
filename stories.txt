@@ -1,0 +1,110 @@
+Project Setup
+Initialize Vite.js Project with React
+Install Dependencies
+Tasks Breakdown
+Task 1-10: Project Initialization
+Initialize Vite Project
+Setup Basic React Structure
+Add CSS and Sass Support
+Setup Routing with React Router
+Create Main Layout Component
+Setup Header Component
+Setup Footer Component
+Add Global Styles
+Setup Sidebar Component
+Setup Environment Configuration
+Task 11-30: Header and Navigation
+Create Logo Component
+Add Navigation Links
+Add Search Bar Component
+Style Header Component
+Add User Profile Dropdown
+Add Notifications Icon
+Add Responsive Navigation
+Create Submenu for Navigation Links
+Integrate Search Functionality
+Style Navigation Links
+Add Support for Active Links
+Create Mobile Navigation Toggle
+Style Mobile Navigation
+Add Mobile Navigation Links
+Setup Navigation Context
+Add User Avatar Component
+Add Dark Mode Toggle
+Style User Profile Dropdown
+Integrate Notifications Dropdown
+Style Notifications Dropdown
+Task 31-50: Main Content
+Create Top Stories Section
+Add News Cards to Top Stories
+Style Top Stories Section
+Create Latest News Section
+Add News Cards to Latest News
+Style Latest News Section
+Create Featured Articles Section
+Add Articles to Featured Section
+Style Featured Articles Section
+Create Market Data Section
+Add Market Data Cards
+Style Market Data Section
+Create Categories Section
+Add Category Cards
+Style Categories Section
+Create Advertisement Component
+Add Advertisements to Sidebar
+Style Advertisement Component
+Add Pagination to News Sections
+Style Pagination
+Task 51-70: Sidebar
+Create Sidebar Layout
+Add Recent Articles to Sidebar
+Style Recent Articles
+Add Popular Tags to Sidebar
+Style Popular Tags
+Add Newsletter Signup Form
+Style Newsletter Signup Form
+Add Social Media Links
+Style Social Media Links
+Create Trending Topics Section
+Add Topics to Trending Section
+Style Trending Topics Section
+Create Sidebar Widgets
+Add Widgets to Sidebar
+Style Sidebar Widgets
+Add User Login Form
+Style User Login Form
+Create Related Articles Section
+Add Related Articles to Sidebar
+Style Related Articles Section
+Task 71-90: Footer
+Create Footer Layout
+Add Footer Links
+Style Footer Links
+Add Contact Information
+Style Contact Information
+Add Newsletter Signup to Footer
+Style Newsletter Signup
+Add Footer Social Media Links
+Style Footer Social Media Links
+Create Privacy Policy Link
+Add Terms of Service Link
+Style Privacy and Terms Links
+Add Footer Navigation Links
+Style Footer Navigation Links
+Add Footer Logo
+Style Footer Logo
+Create Sitemap Link
+Add Sitemap Link to Footer
+Style Sitemap Link
+Add Copyright Information
+Task 91-100: Final Touches and Deployment
+Optimize Images
+Add SEO Metadata
+Setup Google Analytics
+Add Favicons
+Add Manifest File
+Setup Service Worker for PWA
+Test on Different Browsers
+Fix Responsive Issues
+Deploy to Vercel
+Write Documentation
