@@ -19,14 +19,14 @@ const Navigation = () => {
   return (
     <nav>
       <ul>
-        <li><NavLink to="/world">World</NavLink></li>
-        <li><NavLink to="/business">Business</NavLink></li>
+        <li><NavLink to="/world" activeClassName="active">World</NavLink></li>
+        <li><NavLink to="/business" activeClassName="active">Business</NavLink></li>
         <li 
           className="dropdown" 
           onMouseEnter={toggleDropdown} 
           onMouseLeave={toggleDropdown}
         >
-          <NavLink to="/technology">Technology</NavLink>
+          <NavLink to="/technology" activeClassName="active">Technology</NavLink>
           {isDropdownOpen && <Submenu items={technologySubmenuItems} />}
         </li>
         {/* Add more links here */}
