@@ -1,16 +1,16 @@
 // src/components/TopStories.jsx
 import React from 'react';
+import NewsCard from './NewsCard';
 
 const TopStories = ({ articles }) => {
   return (
     <section className="top-stories">
       <h2>Top Stories</h2>
-      {articles.map(article => (
-        <div key={article.id}>
-          <h3>{article.title}</h3>
-          <p>{article.content}</p>
-        </div>
-      ))}
+      <div className="news-cards">
+        {articles.map(article => (
+          <NewsCard key={article.id} title={article.title} content={article.content} />
+        ))}
+      </div>
     </section>
   );
 };
