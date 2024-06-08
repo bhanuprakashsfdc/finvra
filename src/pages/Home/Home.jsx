@@ -4,6 +4,7 @@ import TopStories from '../../components/TopStories';
 import LatestNews from '../../components/LatestNews';
 import FeaturedArticles from '../../components/FeaturedArticles';
 import MarketData from '../../components/MarketData';
+import Categories from '../../components/Categories';
 import Sidebar from '../../components/Sidebar';
 
 const articles = [
@@ -35,6 +36,7 @@ const Home = ({ searchQuery }) => {
         <LatestNews articles={filteredArticles.filter(article => article.id === 2)} />
         <FeaturedArticles articles={filteredArticles.filter(article => article.id === 3)} />
         <MarketData />
+        <Categories />
       </main>
       <Sidebar />
     </div>
