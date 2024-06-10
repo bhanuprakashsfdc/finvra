@@ -4,6 +4,7 @@ import Advertisement from './Advertisement';
 
 const Sidebar = () => {
   const [recentArticles, setRecentArticles] = useState([]);
+  const [popularTags, setPopularTags] = useState([]);
 
   useEffect(() => {
     // Simulate fetching recent articles
@@ -19,7 +20,14 @@ const Sidebar = () => {
       setRecentArticles(articles);
     };
 
+    // Simulate fetching popular tags
+    const fetchPopularTags = () => {
+      const tags = ['Technology', 'Business', 'Sports', 'Health', 'Entertainment'];
+      setPopularTags(tags);
+    };
+
     fetchRecentArticles();
+    fetchPopularTags();
   }, []);
 
   const ads = [
@@ -28,8 +36,6 @@ const Sidebar = () => {
     { id: 3, imageUrl: '/images/ad3.jpg', link: 'https://example.com/ad3', altText: 'Ad 3' },
     // Add more ads as needed
   ];
-
-  const popularTags = ['Technology', 'Business', 'Sports', 'Health', 'Entertainment'];
 
   return (
     <aside className="sidebar">
