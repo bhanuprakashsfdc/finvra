@@ -14,6 +14,11 @@ const Header = ({ onSearch }) => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const handleSearch = (query) => {
+    onSearch(query);
+    navigate(`/search?query=${query}`);
+  };
+
   return (
     <header>
       <Logo />
@@ -23,7 +28,7 @@ const Header = ({ onSearch }) => {
       <nav className={isNavOpen ? 'open' : ''}>
         <Navigation />
       </nav>
-      <SearchBar onSearch={onSearch} />
+       <SearchBar onSearch={handleSearch} />
       <Notifications />
       <UserProfile />
       <DarkModeToggle />

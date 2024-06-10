@@ -58,13 +58,29 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block;
-  width: 100%;
+  position: relative;
   text-decoration: none;
   color: #333;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #007bff;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: skewX(-20deg);
+}
+
+nav ul li a:hover::before {
+  transform: translateX(100%) skewX(-20deg);
 }
 
 nav ul li a:hover {
@@ -84,6 +100,85 @@ nav ul li a.active {
   border: none;
   font-size: 2rem;
   cursor: pointer;
+}
+
+/* scroll to top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+/* Related Article CSS */
+.related-articles {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.related-articles h3 {
+  margin-bottom: 1rem;
+}
+
+.related-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-articles ul li {
+  margin-bottom: 0.5rem;
+}
+
+.related-articles ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.related-articles ul li a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+/* BreadCrumb */
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #333;
 }
 
 /* Styles for larger screens */
@@ -329,6 +424,61 @@ body.dark-mode nav ul li a.active {
   background-color: #e9ecef;
   color: #6c757d;
   cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section {
+  margin-bottom: 1.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 768px) {
